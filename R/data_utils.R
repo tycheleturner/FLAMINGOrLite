@@ -6,7 +6,9 @@ construct_obj_from_hic <- function(hic_file,
   library(strawr)
   #### get data
   options(scipen = 999)
-  chr_number <- gsub("chr","",chr_name)
+  #chr_number <- gsub("chr","",chr_name)
+   chr_number <- chr_name
+
   normalized_data = strawr::straw(normalization,hic_file,chr_number,chr_number,unit='BP',binsize=resolution)
 
   #### reformat contact frequency matrix
