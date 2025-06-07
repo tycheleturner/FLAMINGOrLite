@@ -5,8 +5,8 @@ library(FLAMINGOrLite)
 
 option_list <- list(
 	make_option(c('-i', '--input'), action='store', type='character', default='inter_30.hic', help='.hic file to use as input'),
-	make_option(c('-r', '--chromosome'), action='store', type='character', default='chr1', help='Variant file created from the variant directory'),
-	make_option(c('-t', '--thread'), action='store', type='numeric', default=1, help='Number of threads that flamingo can use during the run'),
+	make_option(c('-r', '--chromosome'), action='store', type='character', default='chr1', help='chromosome to run flamingo on'),
+	make_option(c('-t', '--thread'), action='store', type='numeric', default=1, help='number of threads that flamingo can use during the run'),
         make_option(c('-o', '--output'), action='store', type='character', default='output', help='output file name')
 )
 opt <- parse_args(OptionParser(option_list = option_list)) 
