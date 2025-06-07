@@ -105,3 +105,15 @@ A `.vtk` file stored at `opt_path` for ParaView visualization.
 
 Type `?write.vtk` for detailed explanations of each argument.
 
+
+
+## Running Command Line Version
+```
+Rscript run_flamingo.R -i inter_30.hic -r chr19 -t 12 -o mydata_
+Rscript flamingo_plot.R -i mydata_chr19.txt -o mydata_chr19
+```
+
+
+
+
+
