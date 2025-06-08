@@ -113,7 +113,5 @@ Rscript run_flamingo.R -i inter_30.hic -r chr19 -t 12 -o mydata_
 Rscript flamingo_plot.R -i mydata_chr19.txt -o mydata_chr19
 ```
 
-
-
-
+Example output from the command line version are present in the `example/` directory.
 
